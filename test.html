@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="setValue('80')" value="设置">
+    <input type="button" onclick="getValue('value');" value="显示">
+</body>
+<script>
+    function setValue(value) {
+        sessionStorage.setItem("value", value); 
+    }
+
+    function getValue(value) {
+        alert(sessionStorage.getItem(value));
+    }
+</script>
+</html>
